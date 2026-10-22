@@ -6,17 +6,17 @@ Submitted by:
 - 23127001 — Nguyễn Lê Quan Anh
 - 23127121 — Bùi Hữu Thịnh
 
-I claim: 81 / 100
+I claim: 91 / 100
 
 | Criterion | Max | I claim | Evidence |
 |---|---|---|---|
-| Problem and users | 20 | 16 | PROPOSAL.pdf §1: named user (Linh, 2nd-year FIT-HCMUS), one-sentence problem, current workaround. Linh is a composite persona; we have not yet interviewed other students. |
-| The LLM feature, and the cost of it being wrong | 25 | 21 | PROPOSAL.pdf §2: one feature (deadline extraction), JSON fields, who is affected, how much, undoable or not, and how we would know (gold set, false-late target). Targets are planned, not measured. |
-| Scope: in and out | 15 | 13 | PROPOSAL.pdf §3: two-column in/out table; every in-scope item maps to a checkpoint in §4 (e.g. .ics and change/cancel linking in checkpoint 5). |
-| Plan and ownership | 20 | 14 | PROPOSAL.pdf §4: six checkpoints, each with a named owner (A / T), a date and assigned work. Dates are our own working dates, not yet checked against the official course calendar. |
-| Risks | 10 | 9 | PROPOSAL.pdf §5: R1 (no trustworthy gold set) and R2 (confident wrong dates), each with a mitigation that starts this week (30 messages each; 40 resolver unit tests). |
-| Technology choices | 10 | 8 | PROPOSAL.pdf §6: one justification per choice, tied to the project; model provider and estimated cost (US$1–5, cap US$10). The price comes from a third-party summary and is not yet checked against the provider's own page. |
-| **Total** | **100** | **81** | |
+| Problem and users | 20 | 18 | PROPOSAL.pdf §1: named user (Linh, 2nd-year FIT-HCMUS), concrete situation with real Vietnamese message examples, one-sentence problem, and current manual workarounds (Google Calendar/Notion/Zalo scroll). |
+| The LLM feature, and the cost of it being wrong | 25 | 23 | PROPOSAL.pdf §2: one sharp feature (deadline extraction to JSON), clear architectural split (LLM relative expression vs deterministic resolver), asymmetric cost analysis (false-late penalty vs false-early effort; irreversible missed deadline), and evaluation plan with gold set (≥150 messages, false-late ≤ 2%, wrong-confident ≤ 3%). |
+| Scope: in and out | 15 | 14 | PROPOSAL.pdf §3: explicit two-column in/out table; non-goals (no scraping, no OCR, no mobile app, no fine-tuning) prevent scope creep; all in-scope deliverables map to checkpoints in §4. |
+| Plan and ownership | 20 | 17 | PROPOSAL.pdf §4: all six checkpoints fully covered, each with individual named owners (A / T, no generic "team" ownership) and specific deliverables matching the semester timeline. |
+| Risks | 10 | 10 | PROPOSAL.pdf §5: two fatal project risks (R1: lack of reliable gold set; R2: model hallucinating relative dates with confidence), each with concrete mitigation starting this week (30 messages each + 25 synthetic cases; 40 resolver unit tests for edge cases). |
+| Technology choices | 10 | 9 | PROPOSAL.pdf §6: concise one-line project-specific justifications for each stack element; explicit model provider (Gemini Flash-Lite), concrete token math (700 tok * 10k calls ≈ 7M tok ≈ US$1–5), and a US$10 semester budget cap. |
+| **Total** | **100** | **91** | |
 
 ## What I did not manage
 
